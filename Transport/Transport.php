@@ -10,7 +10,7 @@ class Transport
     }
 
     public function getInfo() {
-        return "Name: {$this->name}, Speed: {$this->speed} km/h";
+        echo "Name: {$this->name}, Speed: {$this->speed} km/h";
     }
 
     /**

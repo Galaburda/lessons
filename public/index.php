@@ -20,14 +20,9 @@ echo $bicycle->ringBell() . PHP_EOL;
 echo $car->startEngine() . PHP_EOL;
 echo $boat->sail() . PHP_EOL;
 
-
-
-$transportCollection = new TransportCollection([$bicycle, $car, $boat]);
-
-function allTransport($transportCollection){
-    foreach ($transportCollection as $transport) {
-        echo $transport->className() . ' : ' . $transport->getName() . ' / ' . $transport->getSpeed() . PHP_EOL;
-    }
+$arr = [$bicycle, $car, $boat];
+foreach ($arr as $value)
+{
+    echo get_class($value)  . ' ';
+    $value->getinfo() . PHP_EOL;
 }
-
-allTransport($transportCollection );

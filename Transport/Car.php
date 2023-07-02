@@ -11,7 +11,8 @@ class Car extends Transport
 
     public function getInfo()
     {
-        return "Name: {$this->name}, Speed: {$this->speed} km/h, Doors: {$this->numDoors}";
+        parent::getInfo();
+        return " Doors: {$this->numDoors}";
     }
     public function startEngine()
     {

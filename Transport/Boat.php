@@ -11,7 +11,8 @@ class Boat extends Transport
 
     public function getInfo()
     {
-        return "Name: {$this->name}, Speed: {$this->speed} km/h, Passengers: {$this->maxPassengers}";
+        parent::getInfo();
+        return " Passengers: {$this->maxPassengers}";
     }
 
     public function sail()

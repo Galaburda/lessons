@@ -11,7 +11,8 @@ class Bicycle extends Transport
 
     public function getInfo()
     {
-        return "Name: {$this->name}, Speed: {$this->speed} km/h, Number Gears: {$this->numGears}";
+        parent::getInfo();
+        return " Number Gears: {$this->numGears}";
     }
 
     public function ringBell()

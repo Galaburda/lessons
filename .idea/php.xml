@@ -10,6 +10,11 @@
     <option name="highlightLevel" value="WARNING" />
     <option name="transferred" value="true" />
   </component>
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+    </include_path>
+  </component>
   <component name="PhpInterpreters">
     <interpreters>
       <interpreter id="021c67bf-c8d1-4a73-b758-561a0e5728e7" name="Remote PHP 8.2" home="vagrant://DATA" false="false" debugger_id="php.debugger.XDebug">
